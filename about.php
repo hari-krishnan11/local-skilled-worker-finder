@@ -1,0 +1,264 @@
+<?php
+include("./Assets/Connection/Connection.php");
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About - SkilledWorkersFinder</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="./Assets/Templates/Main/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="./Assets/Templates/Main/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="./Assets/Templates/Main/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./Assets/Templates/Main/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="./Assets/Templates/Main/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+   <!-- Topbar Start -->
+    <div class="container-fluid bg-light d-none d-lg-block">
+        <div class="row align-items-center top-bar">
+            <div class="col-lg-3 col-md-12 text-center text-lg-start">
+                <a href="" class="navbar-brand m-0 p-0">
+                    <h1 class="text-primary m-0">SkilledFinder</h1>
+
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-12 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    <p class="m-0">kothamagalam</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="far fa-envelope-open text-primary me-2"></i>
+                    <p class="m-0">info@example.com</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
+            <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+                <h1 class="text-primary m-0">SkilledFinder</h1>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto">
+                    <a href="index.php" class="nav-item nav-link active">Home</a>
+                    <a href="about.php" class="nav-item nav-link">About</a>
+                    <a href="service.php" class="nav-item nav-link">Services</a>
+                    <a href="contact.php" class="nav-item nav-link">Contact</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Signup</a>
+                        <div class="dropdown-menu fade-up m-0">
+                            <a href="./Guest/User.php" class="dropdown-item">Register As User</a>
+                            <a href="./Guest/Worker.php" class="dropdown-item">Register As Worker</a>
+                        </div>
+                    </div>
+                    <a href="./Guest/Login.php" class="nav-item nav-link">Login</a>
+
+                </div>
+                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                        <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="mb-1 text-white">Emergency 24/7</p>
+                        <h5 class="m-0 text-secondary">+012 345 6789</h5>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+ <!-- About Header -->
+<div class="container-fluid p-0 mb-5">
+    <div class="position-relative">
+        <img class="img-fluid w-100" src="./Assets/Templates/Main/img/carousel-6.jpg" alt="Skilled Worker Finder">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+            <div class="container">
+                <div class="row justify-content-start">
+                    <div class="col-10 col-lg-8">
+                        <h5 class="text-white text-uppercase mb-3 animated slideInDown">Connecting People to Skilled Workers</h5>
+                          <h1 class="display-3 text-white animated slideInDown mb-4">Find Skilled Workers </h1>
+                          <p class="fs-5 fw-medium text-white mb-4 pb-2"> plumbers, cleaners, welders, electricians and more — quickly and reliably.</p>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- About Content -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h6 class="text-secondary text-uppercase">Who We Are</h6>
+                    <h1 class="mb-4">We connect households and businesses with skilled local workers</h1>
+                    <p>SkilledWorkersFinder is a platform built to make finding trustworthy technicians and helpers simple and fast. Whether it's a plumber, cleaner, electrician or welder — our vetted professionals are ready to help.</p>
+
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-2"><i class="fa fa-check text-success me-2"></i>Verified and experienced workers</li>
+                        <li class="mb-2"><i class="fa fa-check text-success me-2"></i>Transparent pricing and reviews</li>
+                        <li class="mb-2"><i class="fa fa-check text-success me-2"></i>Easy booking and support</li>
+                    </ul>
+
+                    <div class="bg-primary d-flex align-items-center p-4 mt-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt fa-2x text-primary"></i>
+                        </div>
+                        <div class="ms-3">
+                            <p class="fs-5 fw-medium mb-2 text-white">Support 24/7</p>
+                            <h3 class="m-0 text-secondary">+91 98765 43210</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" style="min-height: 420px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="./Assets/Templates/Main/img/about-1.jpg" style="object-fit: cover; padding: 0 0 50px 80px;" alt="">
+                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="./Assets/Templates/Main/img/about-2.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission / Vision -->
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h4>Our Mission</h4>
+                    <p>To make hiring skilled workers safe, affordable and frictionless for every home and business.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Our Vision</h4>
+                    <p>To be the most trusted local marketplace for on-demand skilled labor across India.</p>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="row g-4 mt-5">
+                <div class="col-md-3 text-center">
+                    <h2 data-toggle="counter-up">12</h2>
+                    <p>Years in Service</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h2 data-toggle="counter-up">450</h2>
+                    <p>Verified Workers</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h2 data-toggle="counter-up">8k</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h2 data-toggle="counter-up">15k</h2>
+                    <p>Jobs Completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="container-fluid py-5 px-0">
+        <div class="container">
+            <div class="bg-light p-5 text-center">
+                <h2>Looking for a skilled worker now?</h2>
+                <p class="mb-4">Search, compare reviews, and book professionals in a few clicks.</p>
+                <a href="./Guest/Login.php" class="btn btn-primary py-3 px-5">Find Workers</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Your City, Your Area</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 98765 43210</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>support@skilledworkers.example</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Opening Hours</h4>
+                    <h6 class="text-light">Monday - Friday:</h6>
+                    <p class="mb-4">09.00 AM - 09.00 PM</p>
+                    <h6 class="text-light">Saturday - Sunday:</h6>
+                    <p class="mb-0">09.00 AM - 06.00 PM</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Services</h4>
+                    <a class="btn btn-link" href="#">Plumbers</a>
+                    <a class="btn btn-link" href="#">Cleaners</a>
+                    <a class="btn btn-link" href="#">Welders</a>
+                    <a class="btn btn-link" href="#">Electricians</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <p>Get updates on new workers and offers.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright py-3">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; SkilledWorkersFinder, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed by You
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Assets/Templates/Main/lib/wow/wow.min.js"></script>
+    <script src="./Assets/Templates/Main/lib/easing/easing.min.js"></script>
+    <script src="./Assets/Templates/Main/lib/waypoints/waypoints.min.js"></script>
+    <script src="./Assets/Templates/Main/lib/counterup/counterup.min.js"></script>
+    <script src="./Assets/Templates/Main/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="./Assets/Templates/Main/js/main.js"></script>
+</body>
+
+</html>
